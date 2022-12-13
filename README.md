@@ -1,5 +1,5 @@
-As a setup, implement `A(m: Int, n: Int): Int` according to:
+Change the implementation and return type of `A(m: Int, n: Int): Int` according to the:
 
-![Specification](./spec.png)
+![specification](doc/img/spec.png)
 
-And make the assertion when running `Main.scala` happy.
+And make the assertion when running `Main.scala` succeed.
