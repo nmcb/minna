@@ -3,7 +3,7 @@ on:
     - cron: '0 6 * * *'
   workflow_dispatch:
 
-name: Launch Scala Update
+name: Scala Update
 
 jobs:
   scala-steward:
