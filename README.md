@@ -1,4 +1,4 @@
-Change the implementation and return type of `A(m: Int, n: Int): Int` according to the:
+Change the implementation and return type of `A(m: Int, n: Int): Int` according to the specification:
 
 ![specification](doc/img/spec.png)
 
