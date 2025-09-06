@@ -1,4 +1,4 @@
-scalaVersion := "2.13.16"
+scalaVersion := "3.7.2"
 name         := "minna"
 organization := "nmcb"
 version      := "0.0.1"
