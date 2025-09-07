@@ -26,7 +26,3 @@ given Sized[List[?]]:
 
   println(filterMinSize(List("a", "aa", "aaa"), 2))
   println(filterMaxSize(List(List(), List(1), List(1,2), List(1,2,3)), 2))
-
-
-
-
