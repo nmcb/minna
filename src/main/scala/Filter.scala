@@ -1,9 +1,7 @@
-
 import scala.annotation.tailrec
 
 trait Sized[A]:
   def size(a: A): Int
-
 
 def filterWithSize[A : Sized](p: Int => Int => Boolean)(l: List[A], n: Int): List[A] =
   @tailrec
@@ -19,10 +17,12 @@ given Sized[String]:
 given Sized[List[?]]:
   def size(l: List[?]): Int = l.size
 
-@main def run(): Unit =
+object Filter:
 
-  def filterMinSize = filterWithSize[String](a => b => a >= b)
-  def filterMaxSize = filterWithSize[List[?]](a => b => a <= b)
+  def main(args: Array[String]): Unit =
 
-  println(filterMinSize(List("a", "aa", "aaa"), 2))
-  println(filterMaxSize(List(List(), List(1), List(1,2), List(1,2,3)), 2))
+    def filterMinSize = filterWithSize[String](a => b => a >= b)
+    def filterMaxSize = filterWithSize[List[?]](a => b => a <= b)
+
+    println(filterMinSize(List("a", "aa", "aaa"), 2))
+    println(filterMaxSize(List(List(), List(1), List(1,2), List(1,2,3)), 2))
