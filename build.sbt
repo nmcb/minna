@@ -1,4 +1,4 @@
-ThisBuild / scalaVersion   := "3.8.4"
+ThisBuild / scalaVersion   := "3.9.0"
 ThisBuild / organization   := "nmcb"
 ThisBuild / version        := "0.0.1"
 ThisBuild / fork           := true
