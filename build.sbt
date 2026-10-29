@@ -15,6 +15,10 @@ ThisBuild / scalacOptions ++= Seq(
   "-deprecation"
 )
 
+ThisBuild / libraryDependencies ++= Seq(
+  "org.scalatest"  %% "scalatest"  % "3.2.20" % "test"
+)
+
 ThisBuild / Compile / run / javaOptions ++= Seq(
   "-Xmx4G",
   "-Xss1G",
